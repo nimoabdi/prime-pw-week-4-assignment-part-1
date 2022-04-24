@@ -64,10 +64,18 @@ console.log(getLast(sports));
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
-function find( value, array ){
-  
-}
+let array1 = ['1', '2', '3', '4']
 
+function find(value, array){
+  for (let item of array){
+    if (value === item){
+      return true;
+    }
+  }
+  return false;
+}
+console.log(find('1', array1));
+console.log(find('6', array1))
 // ----------------------
 // Stretch Goals
 // ----------------------
